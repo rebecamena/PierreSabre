@@ -26,12 +26,12 @@ public class Humain {
 	        parler("Mmmm, un bon verre de " + boissonFavorite + " ! GLOUPS !");
 	    }
 
-	    public void acheter(String bien, int prix) {
+	    public void acheter(String boisson, int prix) {
 	        if (argent >= prix) {
 	            argent -= prix;
-	            parler("J'ai acheté " + bien + " pour " + prix + " euros.");
+	            parler("J'ai acheté " + boisson + " pour " + prix + " euros.");
 	        } else {
-	            parler("Je n'ai pas assez d'argent pour acheter " + bien + ".");
+	            parler("Je n'ai pas assez d'argent pour acheter " + boisson + ".");
 	        }
 	    }
 
