@@ -18,6 +18,12 @@ public class Humain {
 	    public int getArgent() {
 	        return argent;
 	    }
+	    
+	    public void setArgent(int argent) {
+	        this.argent = argent;
+	    }
+	    
+	    
 	    public void direBonjour() {
 	        parler("Bonjour ! Je m'appelle " + nom + " et j'aime boire du " + boissonFavorite);
 	    }
@@ -35,18 +41,17 @@ public class Humain {
 	        }
 	    }
 
-	    public void gagnerArgent(int gain) {
+	    protected void gagnerArgent(int gain) {
 	        argent += gain;
-	        parler("J'ai gagné " + gain + " euros !");
+	
 	    }
 
-	    public void perdreArgent(int perte) {
+	    protected void perdreArgent(int perte) {
 	        argent -= perte;
-	        parler("J'ai perdu " + perte + " euros...");
 	    }
 
 	    public void parler(String texte) {
-	        System.out.println("[ " + nom + " ] " + texte);
+	        System.out.println("(" + nom + ") " + texte);
 	    }
 	}
 
