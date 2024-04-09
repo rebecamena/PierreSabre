@@ -1,8 +1,7 @@
 package personnages;
-import personnages.Humain;
 
 public class Commercant extends Humain{
-	 public Commercant(String nom) {
+	 public Commercant(String nom, int argent) {
 	        super(nom, "thé", 0);
 	    }
 

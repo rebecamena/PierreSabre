@@ -31,6 +31,7 @@ public class Ronin extends Humain {
         perdreArgent(argentDonne);
         beneficiaire.gagnerArgent(argentDonne);
         parler("J'ai donné " + argentDonne + " sous à " + beneficiaire.getNom() );
+    
             }
        
     }
