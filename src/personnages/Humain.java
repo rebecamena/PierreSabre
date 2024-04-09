@@ -33,6 +33,9 @@ public class Humain {
 	    	nbConnaissance++;
 	        }
 	    }
+	    public String getBoisson() {
+	    	return this.boissonFavorite;
+	    }
 	    
 	    public void direBonjour() {
 	        parler("Bonjour ! Je m'appelle " + nom + " et j'aime boire du " + boissonFavorite);
